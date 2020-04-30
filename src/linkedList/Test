@@ -1,0 +1,53 @@
+LinkedList l = new LinkedList();
+l.addLast(2);
+l.addLast(9);
+l.addLast(0);
+l.addLast(5);
+l.addLast(2);
+l.addLast(5);
+l.addLast(2);
+System.out.println(l.toStringBuffer());
+System.out.println(l.getSize());
+l.addFirst(7);
+System.out.println(l.toStringBuffer());
+l.addAtIndex(9,1);
+l.addAtIndex(3,6);
+System.out.println(l.toStringBuffer());
+l.deleteFirst(7);
+System.out.println(l.toStringBuffer());
+l.deleteLast(9);
+System.out.println(l.toStringBuffer());
+l.deleteAtIndex(3);
+System.out.println(l.toStringBuffer());
+System.out.println(l.getFirst());
+System.out.println(l.getLast());
+System.out.println(l.getAtIndex(2));
+System.out.println(l.contains(3));
+System.out.println(l.contains(7));
+System.out.println(l.firstIndexOf(2));
+System.out.println(l.lastIndexOf(2));
+l.set(4, 4);
+System.out.println(l.toStringBuffer());
+l.replaceFirstMinLastMax();
+System.out.println(l.toStringBuffer());
+l.clear();
+System.out.println(l.toStringBuffer());
+
+
+New LinkedList: 2905252
+Size: 6
+AddFirst(7): 72905252
+AddAtIndex(9,1), addAtIndex(3,6): 7929053252
+DeleteFirst(7): 929053252
+DeleteLast(9): 92053252
+DeleteAtIndex(3): 9203252
+GetFirst(): 9
+GetLast(): 2
+GetAtIndex(2): 0
+Contains(3): true
+Contains(7): false
+FirstIndexOf(2): 1
+LastIndexOf(2): 6
+Set(4, 4): 9203452
+ReplaceFirstMinLastMax(): 0293452
+Clear():
